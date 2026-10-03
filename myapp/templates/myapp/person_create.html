@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Créer une personne</title>
+</head>
+<body>
+
+    <h1>Créer une personne</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <label>Prénom :</label><br>
+            <input name="first_name" placeholder="Prénom">
+        </p>
+
+        <p>
+            <label>Nom :</label><br>
+            <input name="last_name" placeholder="Nom">
+        </p>
+
+        <button type="submit">Créer</button>
+    </form>
+
+    <p>
+        <a href="{% url 'person_list' %}">&laquo; Retour à la liste</a>
+    </p>
+
+</body>
+</html>
