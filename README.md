@@ -13,7 +13,7 @@ cd Django-etape-1
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 ```
 
 ## 3. Installer les dépendances
