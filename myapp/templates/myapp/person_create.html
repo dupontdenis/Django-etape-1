@@ -10,15 +10,15 @@
 
     <form method="post">
         {% csrf_token %}
-        <p>
-            <label>Prénom :</label><br>
-            <input name="first_name" placeholder="Prénom">
-        </p>
+    <p>
+        <label for="first_name">Prénom :</label><br>
+        <input id="first_name" name="first_name" placeholder="Prénom">
+    </p>
 
-        <p>
-            <label>Nom :</label><br>
-            <input name="last_name" placeholder="Nom">
-        </p>
+    <p>
+        <label for="last_name">Nom :</label><br>
+        <input id="last_name" name="last_name" placeholder="Nom">
+    </p>
 
         <button type="submit">Créer</button>
     </form>
